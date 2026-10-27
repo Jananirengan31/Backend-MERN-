@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy and Update User</title>
+</head>
+<body>
+    <script>
+        const user = {
+    name: "Bala",
+    age: 25,
+    role: "Developer"
+};
+
+const updatedUser = {
+    ...user,
+    age: 26,
+    role: "Senior Developer"
+};
+
+console.log("Original:");
+console.log(user.name);
+console.log(user.age);
+console.log(user.role);
+
+console.log("Updated:");
+console.log(updatedUser.name);
+console.log(updatedUser.age);
+console.log(updatedUser.role);
+    </script>
+</body>
+</html>

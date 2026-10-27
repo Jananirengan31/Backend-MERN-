@@ -1,0 +1,24 @@
+<script>
+
+    const product = {
+    name: "Laptop",
+    price: 60000,
+    category: "Electronics"
+};
+
+const getProductInfo = () => {
+    const { name, price, category } = product;
+
+    return `Product: ${name}\nPrice: ₹${price}\nCategory: ${category}`;
+};
+
+console.log(getProductInfo());
+
+const newProduct = {
+    ...product,
+    price: 65000
+};
+
+console.log(newProduct);
+console.log(product);
+</script>

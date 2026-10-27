@@ -1,0 +1,16 @@
+<script>
+
+    const calculateTotal = (...prices) => {
+    let total = 0;
+
+    for (let price of prices) {
+        total = total + price;
+    }
+
+    console.log(total);
+};
+
+calculateTotal(100, 200, 300);
+calculateTotal(50, 100);
+calculateTotal(100, 200, 300, 400);
+</script>
