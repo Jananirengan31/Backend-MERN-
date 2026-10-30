@@ -1,0 +1,25 @@
+
+<script>
+
+let mark = 75;
+
+let result = new Promise((resolve, reject) => {
+
+    if (mark >= 35) {
+        resolve("Student Passed");
+    }
+    else {
+        reject("Student Failed");
+    }
+
+});
+
+result
+.then((message) => {
+    console.log(message);
+})
+.catch((error) => {
+    console.log(error);
+});
+
+</script>

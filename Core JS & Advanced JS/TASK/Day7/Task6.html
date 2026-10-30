@@ -1,0 +1,29 @@
+
+<script>
+
+async function getProduct() {
+
+    try {
+
+        let response = await fetch("https://dummyjson.com/products/1");
+
+        if (!response.ok) {
+            throw new Error("Product not found");
+        }
+
+        let product = await response.json();
+
+        console.log("Product Title:", product.title);
+        console.log("Product Price:", product.price);
+        console.log("Product Category:", product.category);
+
+    }
+    catch (error) {
+        console.log("Error:", error.message);
+    }
+
+}
+
+getProduct();
+
+</script>
